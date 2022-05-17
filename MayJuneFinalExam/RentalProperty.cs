@@ -32,6 +32,11 @@ namespace MayJuneFinalExam
         {
             Price +=   Price * increase;
         }
+
+        public override string ToString()
+        {
+            return Location + " " + $"€{Price}" ;
+        }
     }//end of class
 
     public class RentalData : DbContext

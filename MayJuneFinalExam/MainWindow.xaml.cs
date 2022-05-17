@@ -20,9 +20,25 @@ namespace MayJuneFinalExam
     /// </summary>
     public partial class MainWindow : Window
     {
+        //creating list that will hae all the properties
+        List<RentalProperty> allProperties;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            RentalData db = new RentalData();
+
+            var query = from p in db.Properties
+                        orderby p.Price
+                        select p;
+            allProperties = query.ToList();
+
+            lbxProperties.ItemsSource = allProperties;
+
+
         }
     }
 }
