@@ -20,6 +20,9 @@ namespace MayJuneFinalExam
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        //link
+        //https://github.com/goniglep57/MayJuneFinalExam.git
         //creating list that will hae all the properties
         List<RentalProperty> allProperties;
         public MainWindow()
