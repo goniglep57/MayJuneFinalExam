@@ -30,7 +30,7 @@ namespace MayJuneFinalExam
         //methods
         public void IncreaseRent(decimal increase)
         {
-            Price = Price * increase;
+            Price +=   Price * increase;
         }
     }//end of class
 }
