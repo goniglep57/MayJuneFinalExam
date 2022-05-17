@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Data.Entity;
 namespace MayJuneFinalExam
 {
     public enum RentalType//enum
@@ -33,4 +33,11 @@ namespace MayJuneFinalExam
             Price +=   Price * increase;
         }
     }//end of class
+
+    public class RentalData : DbContext
+    {
+        public RentalData() : base("MyRentalData") { }
+
+        public DbSet<RentalProperty> Properties { get; set; }
+    }
 }
