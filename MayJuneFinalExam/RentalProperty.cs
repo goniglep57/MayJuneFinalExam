@@ -28,6 +28,9 @@ namespace MayJuneFinalExam
         //constructors
 
         //methods
-
+        public void IncreaseRent(decimal increase)
+        {
+            Price = Price * increase;
+        }
     }//end of class
 }
