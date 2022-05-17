@@ -58,5 +58,10 @@ namespace MayJuneFinalExam
 
             }
         }
+
+        private void AddPropertyButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
