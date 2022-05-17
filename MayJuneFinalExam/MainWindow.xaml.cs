@@ -30,7 +30,7 @@ namespace MayJuneFinalExam
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             //getting a db for the rental data
-            RentalData db = new RentalData();
+            RentalData1 db = new RentalData1();
 
             //sorting by price
             var query = from p in db.Properties
@@ -61,7 +61,11 @@ namespace MayJuneFinalExam
 
         private void AddPropertyButton_Click(object sender, RoutedEventArgs e)
         {
-            
+            AddProperty addPage = new AddProperty();
+
+            addPage.Show();
+
+            addPage.WindowStartupLocation = WindowStartupLocation.CenterScreen;
         }
     }
 }

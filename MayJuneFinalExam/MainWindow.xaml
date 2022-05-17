@@ -11,7 +11,7 @@
         <!--Data template to be used along with listbox-->
         <DataTemplate x:Key="lbxTemplate">
             <StackPanel Orientation="Horizontal" Margin="5">
-                <Image Source=""></Image>
+                <Image Source="{Binding Path=PropImage}"></Image>
                 <TextBlock Text="{Binding Location}" ></TextBlock>
                 <TextBlock Text="  €"></TextBlock>
                 <TextBlock Text="{Binding Price}"></TextBlock>

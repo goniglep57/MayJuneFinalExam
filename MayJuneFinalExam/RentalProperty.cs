@@ -25,6 +25,8 @@ namespace MayJuneFinalExam
 
         public string Description { get; set; }
 
+        public string PropImage { get; set; }
+
         //constructors
 
         //methods
@@ -39,9 +41,9 @@ namespace MayJuneFinalExam
         }
     }//end of class
 
-    public class RentalData : DbContext
+    public class RentalData1 : DbContext
     {
-        public RentalData() : base("MyRentalData") { }
+        public RentalData1() : base("RentalData1") { }
 
         public DbSet<RentalProperty> Properties { get; set; }
     }
