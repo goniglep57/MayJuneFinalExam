@@ -19,6 +19,7 @@
         <Button Content="Save" HorizontalAlignment="Left" Margin="418,404,0,0" VerticalAlignment="Top" Click="Button_Click"/>
         <TextBox x:Name="tblkLocation" HorizontalAlignment="Left" Margin="221,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="tblkPrice" HorizontalAlignment="Left" Margin="221,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnReturn" Content="Return" HorizontalAlignment="Left" Margin="354,404,0,0" VerticalAlignment="Top" Click="btnReturn_Click"/>
 
     </Grid>
 </Window>

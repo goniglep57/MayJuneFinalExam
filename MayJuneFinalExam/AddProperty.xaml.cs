@@ -53,6 +53,15 @@ namespace MayJuneFinalExam
             db.SaveChanges();
         }
 
-        
+        private void btnReturn_Click(object sender, RoutedEventArgs e)
+        {
+
+           
+            MainWindow mw = new MainWindow();
+
+            mw.Show();
+
+            this.Close();
+        }
     }
 }

@@ -66,6 +66,7 @@ namespace MayJuneFinalExam
         {
             AddProperty addPage = new AddProperty();
 
+            this.Close();
             addPage.Show();
 
             addPage.WindowStartupLocation = WindowStartupLocation.CenterScreen;
