@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         Loaded="Window_Loaded">
+    <Window.Resources>
+        <DataTemplate x:Key="lbxTemplate">
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Image Source=""></Image>
+                <TextBlock Text="{Binding Location}" ></TextBlock>
+                <TextBlock Text="  €"></TextBlock>
+                <TextBlock Text="{Binding Price}"></TextBlock>
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="89*"/>
@@ -18,7 +28,7 @@
             <ColumnDefinition Width="103*"/>
         </Grid.ColumnDefinitions>
 
-        <ListBox Grid.Row="1" Grid.Column="0" Margin="5" Name="lbxProperties" SelectionChanged="lbxProperties_SelectionChanged"/>
+        <ListBox ItemTemplate="{StaticResource lbxTemplate}" Grid.Row="1" Grid.Column="0" Margin="5" Name="lbxProperties" SelectionChanged="lbxProperties_SelectionChanged"/>
 
         <Label Grid.Row="0" Grid.Column="0" Content="Property Listing" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="19"/>
 
