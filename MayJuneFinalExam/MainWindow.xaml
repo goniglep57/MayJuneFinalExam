@@ -18,11 +18,11 @@
             <ColumnDefinition Width="103*"/>
         </Grid.ColumnDefinitions>
 
-        <ListBox Grid.Row="1" Grid.Column="0" Margin="5" Name="lbxProperties"/>
+        <ListBox Grid.Row="1" Grid.Column="0" Margin="5" Name="lbxProperties" SelectionChanged="lbxProperties_SelectionChanged"/>
 
         <Label Grid.Row="0" Grid.Column="0" Content="Property Listing" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="19"/>
 
-        <TextBlock Grid.Row="1" Grid.Column="1" Margin="15" Name="tblkDescription"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" Margin="15" Name="tblkDescription" TextWrapping="Wrap" FontSize="18"/>
 
         <Button Grid.Column="2" Grid.Row="1" Height="50" Name="AddPropertyButton" Content="Add"/>
 
